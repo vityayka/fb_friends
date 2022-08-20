@@ -1,4 +1,4 @@
-INSTSALLATION
+# INSTALLATION
 
 0. Add your DB credentials to docker-compose.yml
 
@@ -6,11 +6,11 @@ INSTSALLATION
 
 2. `docker-compose up -d`
 
-USAGE
+# USAGE
 
 1. `docker exec -it fb_friends_php /bin/bash`
 
-Inside the container: 
+# Inside the container: 
 
 2. `cd /opt/fb_friends`; 
 3. `composer install`; 
