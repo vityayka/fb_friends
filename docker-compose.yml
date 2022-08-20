@@ -1,0 +1,16 @@
+version: '3.4'
+services:
+  php:
+    container_name: "fb_friends_php"
+    build: ./docker/php
+    volumes:
+      - .:/opt/fb_friends
+    environment:
+      DB_HOST: 127.0.0.1
+      DB_PORT: 3306
+      DB_USER: user
+      DB_PASSWORD: password
+      DB_NAME: test
+    user: ${CURRENT_UID}
+    expose:
+      - 9000
